@@ -1,0 +1,16 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+RewriteEngine on 
+
+RewriteRule ^index$ index.php [L,NC]
+RewriteRule ^hakkimizda$ hakkimizda.php [L,NC]
+RewriteRule ^iletisim$ iletisim.php [L,NC]
+
+RewriteRule ^menu-([0-9a-zA-Z-_]+)-([0-9]+)  menu-icerik.php?sef=$1&menu_id=$2 [L,QSA]
+RewriteRule ^altmenu-([0-9a-zA-Z-_]+)-([0-9]+) altmenu-icerik.php?sef=$1&altmenu_id=$2 [L,QSA]
+RewriteRule ^urun-([0-9a-zA-Z-_]+)-([0-9]+)  urun-icerik.php?sef=$1&urun_id=$2 [L,QSA]
+RewriteRule ^kategori-([0-9a-zA-Z-_]+)-([0-9]+)  kategori-listele.php?sef=$1&kategori_id=$2 [L,QSA]
+RewriteRule ^altkategori-([0-9a-zA-Z-_]+)-([0-9]+)  altkategori.php?sef=$1&altkategori_id=$2 [L,QSA]
+RewriteRule ^galeri-([0-9a-zA-Z-_]+)-([0-9]+)  galeri-listele.php?sef=$1&kategori_idd=$2 [L,QSA]

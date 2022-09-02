@@ -1,0 +1,4 @@
+Yapılan Değişiklikler
+-Dil sıralaması
+-Dilleri aktif pasif edebilme
+-Alt Kategori modülünün eklenmesi

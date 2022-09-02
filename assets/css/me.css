@@ -1,0 +1,33 @@
+
+/**/
+
+.me-logo {
+    width: 240px !important;
+    margin-top: 5px;
+}
+
+@media only screen and (min-width: 601px) {
+    .me-logo {
+        width: 240px !important;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .me-logo {
+        width: 212px !important;
+        margin-top: 5px;
+    }
+}
+
+.me-footer-logo {
+    width: 200px !important;
+}
+
+.me-fixed-logo {
+    width: 200px;
+    margin-top: 3px;
+}
+
+
+
